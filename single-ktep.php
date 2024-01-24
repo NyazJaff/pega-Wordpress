@@ -92,9 +92,7 @@
                                 <span class="screen-reader-text">گه&zwnj;ڕان له&zwnj;</span>
                             </button>
                             <div class="articles-from-the-series" id='babats_table'>
-                            <?php echo get_field('post_type');?>"
-                            <?php echo get_field('category_mamosta');?>"
-
+        
                              <?php
                              $args = array(
                                 'post_type' => get_field('post_type'),
