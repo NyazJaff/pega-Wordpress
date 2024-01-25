@@ -21,7 +21,7 @@
                                 else { echo "<strong> $count_posts</strong>"; }
 
                             } else { ?>
-                                <h2>There are currently no vacancies.</h2>
+                                <h2>هیچ بابه‌تی بونی نیه‌</h2>
                                 <?php } ?> </a>
                             </div>
                         </div>
