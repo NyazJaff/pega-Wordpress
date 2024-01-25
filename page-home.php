@@ -49,7 +49,7 @@
                         </div>
                         <div>
                             <h2></h2>
-                            <small class="growth"><?php if(function_exists('subh_set_post_view')) { subh_set_post_view(get_the_ID()); } echo getPostViews(get_the_ID()); ?></small>
+                            <small class="growth"><?php echo getPostViews(get_the_ID()); ?></small>
                         </div>
                     </div>
                 </div>
