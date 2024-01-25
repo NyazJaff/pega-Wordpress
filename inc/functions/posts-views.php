@@ -19,7 +19,7 @@ function subh_set_post_view($postID)
 function getPostViews($postID){
     $count_key = 'post_views_count';
     $count = get_post_meta($postID, $count_key, true);    
-    return $count.' بینراوه‌';
+    return $count.' ';
 }
 
 /**
@@ -31,7 +31,7 @@ function getPostViews($postID){
  */
 function subh_posts_column_views($defaults)
 {
-    $defaults['post_views'] = __('بینراوه‌');
+    $defaults['post_views'] = __('');
 
     return $defaults;
 }

@@ -63,11 +63,11 @@
                                    </div>
                                    <div>
                                     <a class="box-cta no-gradient">
-                                        كۆیی وانه‌كان
+                                        <?php the_field('zanyari_wanakan'); ?> 
                                         <span> <?php  // Zhmaray wanakan
                                         $cat_id = 1; 
                                         $args = array( 
-                                            'post_type' => get_post_type('ktep','narimanpost'),
+                                          //  'post_type' => get_post_type('ktep','narimanpost'),
                                             'post_type' => get_field('post_type'), 
                                             'tax_query' => array ( 
                                                 array( 'taxonomy' => get_field('post_type') , 
@@ -86,11 +86,9 @@
                             </div>
                         </div>
                         <div id="collection-entries-container" >
-                            <input id="search_input" data-post-type="<?php echo get_field('post_type');?>" data-current-page="1" data-posts-per-page="4" data-link="load_more_search" data-category-name="<?php echo get_field('category_mamosta') ?>">
-                            <button id="search-submit" type="submit">
-                                <span class="tie-icon-search tie-search-icon" aria-hidden="true"></span>
-                                <span class="screen-reader-text">گه&zwnj;ڕان له&zwnj;</span>
-                            </button>
+                           <div class="search-box">
+                             <t>گه‌ڕان له‌ ناو یا له‌ ژماره‌</t>
+                            <input id="search_input" type="text" placeholder="گه‌ڕان ..." data-post-type="<?php echo get_field('post_type');?>" data-current-page="1" data-posts-per-page="4" data-link="load_more_search" data-category-name="<?php echo get_field('category_mamosta') ?>"> </div>
                             <div class="articles-from-the-series" id='babats_table'>
         
                              <?php
@@ -106,7 +104,7 @@
                                 'orderby' => 'date',
                                 'post_status' => 'publish',
                                 'order' => 'ASC',
-                                'posts_per_page' => 4
+                                'posts_per_page' => 14
                             );
                             $the_query = new WP_Query( $args ); ?>
                             <?php if ( $the_query->have_posts() ) : ?>
@@ -129,7 +127,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="load-more">
-                            <a href="#!" class="btn load-more-btn" onclick="load_more(event)" id="load-more" data-post-type="<?php echo get_field('post_type') ?>" data-current-page="1" data-posts-per-page="4" data-link="wana_load_more" data-category-name="<?php echo get_field('category_mamosta') ?>">بابه‌تی زیاتر</a>
+                            <a href="#!" class="btn load-more-btn" onclick="load_more(event)" id="load-more" data-post-type="<?php echo get_field('post_type') ?>" data-current-page="1" data-posts-per-page="14" data-link="wana_load_more" data-category-name="<?php echo get_field('category_mamosta') ?>">بابه‌تی زیاتر</a>
                         </div>
                     </div>
                 </div>
