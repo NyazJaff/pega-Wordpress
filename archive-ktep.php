@@ -8,49 +8,28 @@
 get_header(); ?>
 <?php wp_link_pages( 'before=<ul class="page-links">&after=</ul>&link_before=<li class="page-link">&link_after=</li>' ); ?>
 <div class="site-wrap">
-    <nav aria-label="breadcrumbs">
-        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a href="<?php echo get_home_url(); ?>" class="" itemprop="item">
-                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/home.svg" alt="عودة إلى الصفحة الرئيسية" />
-                    <span hidden="" itemprop="name">home</span>
-                    <meta itemprop="position" content="1" />
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a class="is-active" itemprop="item">
-                    <span itemprop="name"> سيلسله زانستيةكان</span>
-                    <meta itemprop="position" content="1" />
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-        </ul>
-    </nav>
-    <script>
-        var breadcrumbTree = null;
-        var breadcrumb = null;
-        document.addEventListener("DOMContentLoaded", function (event) {
-            breadcrumbTree = document.getElementById("breadcrumb-tree");
-            breadcrumb = document.getElementById("breadcrumb");
-        });
-        function showBreadcrumbTree() {
-            breadcrumbTree.classList.remove("is-hidden");
-            breadcrumb.classList.add("is-hidden");
-        }
-        function hideBreadcrumbTree() {
-            breadcrumbTree.classList.add("is-hidden");
-            breadcrumb.classList.remove("is-hidden");
-        }
-    </script>
 
     <main class="page-wrap">
         <div class="main-and-aside">
             <div>
-                <div class="section-box with-see-all">
-                    <h1 class="box-title"> وانه‌كان</h1>
-                    <a> ته‌واوی بابه‌ته‌كان</a>
-                </div>
+ <div class="section-box">
+                    <h1 class="box-title">زنجیره‌ وانه‌كان</h1>
+                    <div class="section-options">
+                        <a id="mushafs-section" class="no-gradient mushafs active" style="
+                        background-image: url(<?php bloginfo('template_url') ?>/inc/images/audio.svg);
+                        ">ڕاڤه‌كردن</a>
+                        <a id="surahs-section" class="no-gradient recitations">                                       <?php $jobs = new WP_Query(array( 'post_type' => 'ktep' ));?>
+                        <?php if ($jobs->have_posts()) { 
+
+                            $count_posts = wp_count_posts('ktep')->publish; 
+                            if ( $count_posts == "1" ) { 
+                                echo "<h2>There is currently one vacancy...</h2>"; }
+                                else { echo "<strong> $count_posts</strong>"; }
+
+                            } else { ?>
+                                <?php } ?> </a>
+                            </div>
+                 </div>
                 <div class="series">
                         <?php $args = array(
                                 'post_type' => 'ktep',
@@ -90,9 +69,27 @@ get_header(); ?>
                                 <div class="video-cover list">
                                     <a href="<?php the_permalink(); ?>" class="no-gradient">
                                         <div class="view-playlist">
-                                            <span class="vid-num"> <?php the_field('zhmaray_wanakan'); ?></span>
+                                            <span class="vid-num"> 
+                                                     <?php  // Zhmaray wanakan
+                                                     $cat_id = 1; 
+                                                     $args = array( 
+                                                                  //  'post_type' => get_post_type('ktep','narimanpost'),
+                                                        'post_type' => get_field('post_type'), 
+                                                        'tax_query' => array ( 
+                                                            array( 'taxonomy' => get_field('post_type') , 
+                                                               'field' => 'slug', 
+                                                               'terms' => $terms = get_field('category_mamosta') ) ),
+                                                        'orderby' => 'date', 
+                                                        'post_status' => 'publish', 
+                                                        'order' => 'ASC', 
+                                                        'posts_per_page' => -1 ); 
+
+                                                     $count_posts = get_posts( $args ); 
+                                                     $total_posts = count($count_posts); 
+                                                     echo $total_posts; ?>
+                                            </span>
                                         </div>
-                                         <?php the_post_thumbnail( array() ); ?>
+                                         <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/collections.svg" data-src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/collections.svg" alt="<?php the_title(); ?>" class="cover entry-img" />
                                         
                                     </a>
                                 </div>

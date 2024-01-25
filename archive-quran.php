@@ -13,27 +13,6 @@ get_header();
 
 
 <div class="site-wrap">
-    <nav aria-label="breadcrumbs">
-        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a href="/" class="" itemprop="item">
-                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/home.svg" alt="عودة إلى الصفحة الرئيسية" />
-                    <span hidden="" itemprop="name">home</span>
-                    <meta itemprop="position" content="1" />
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a href="/recitations" class="is-active" itemprop="item">
-                    <span itemprop="name">قورئانی پیرۆز</span>
-                    <meta itemprop="position" content="1" />
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-        </ul>
-    </nav>
-
-
     <main class="page-wrap">
         <div class="main-and-aside">
             <div class="articles">

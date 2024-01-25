@@ -4183,7 +4183,7 @@
                 <span class="nav-items">
                     <nav class="main-menu">
                         <a class="active" href="<?php echo home_url(); ?>">سه‌ره‌كی</a>
-                        <a href="<?php echo get_home_url(); ?>/ktep">سیلسله‌ وانه‌كان </a>
+                        <a href="<?php echo get_home_url(); ?>/ktep">زنجیره‌ وانه‌كان</a>
                         <a href="<?php echo get_home_url(); ?>/quran">قورئان</a>
                         <a href="<?php echo get_home_url(); ?>">محاضره‌كان</a>
                         <a href="<?php echo get_home_url(); ?>">فتوایه‌كان</a>

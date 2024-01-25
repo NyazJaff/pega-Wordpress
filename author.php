@@ -20,8 +20,8 @@ get_header(); ?>
 
        <header class="preacher-info-header">
         <ul class="social-actions inline">
-            <li><a  href="<?php the_field('fb_url', 'user_'. get_queried_object_id()); ?>" class="facebook">مشاركة مع فيسبوك</a></li>
-            <li><a  href="<?php the_field('yu_url', 'user_'. get_queried_object_id()); ?>" text="محمد آدم الإتيوبي" class="twitter">مشاركة مع تويتر</a></li>
+            <li><a  href="<?php the_field('facebook_link', 'user_'. get_queried_object_id()); ?>" class="facebook">مشاركة مع فيسبوك</a></li>
+            <li><a  href="<?php the_field('youtube_link', 'user_'. get_queried_object_id()); ?>" text="محمد آدم الإتيوبي" class="twitter">مشاركة مع تويتر</a></li>
         </ul>
 
     </header>
