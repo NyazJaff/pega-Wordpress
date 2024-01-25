@@ -1,5 +1,4 @@
         <?php get_header(); ?>
-
         <div class="header-container"></div>
         <div class="site-wrap">
             <nav aria-label="breadcrumbs">
