@@ -73,9 +73,6 @@
 
                     <aside class="sidebar">
                         <div class="sticky-side">
-                            <link rel="stylesheet" href="https://midad.com/build/css/site-numbers.f7dd2718.css" />
-                            <link rel="stylesheet" href="https://midad.com/build/css/owl.6715204f.css" />
-
                             <div class="sidebar-title">
                                 <div class="statistics-follow">
                                     <div class="owl-carousel">
@@ -160,10 +157,7 @@
                                 <div class="box-content">
                                     <ul>
                                         <li>
-                                            <a
-                                                href="https://midad.com/book/187867/%D9%85%D8%A7-%D9%84%D8%A7-%D9%8A%D8%B3%D8%B9-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D9%8A%D9%86-%D8%AC%D9%87%D9%84%D9%87"
-                                                class="item-title"
-                                            >
+                                            <a href="#" class="item-title" >
                                                 ما لا يسع أطفال المسلمين جهله
                                             </a>
                                             <div class="item-author scholars-list">

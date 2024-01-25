@@ -72,7 +72,7 @@ get_header(); ?>
                 <div class="view-playlist">
                     <span class="vid-num"><?php the_field('zhmaray_wanakan'); ?></span>
                 </div>
-                <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/collections.jpg" data-src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/collections.jpg" alt="<?php the_title(); ?>" class="cover entry-img" />
+                <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/collections.svg" data-src="<?php echo get_bloginfo( 'template_directory' ); ?>/inc/images/collections.svg" alt="<?php the_title(); ?>" class="cover entry-img" />
             </a>
         </div>
     </article>
