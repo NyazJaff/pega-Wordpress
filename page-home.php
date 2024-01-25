@@ -21,7 +21,6 @@
                                 else { echo "<strong> $count_posts</strong>"; }
 
                             } else { ?>
-                                <h2>هیچ بابه‌تی بونی نیه‌</h2>
                                 <?php } ?> </a>
                             </div>
                         </div>
@@ -998,7 +997,6 @@
                     else { echo "<strong> $count_posts</strong>"; }
 
                 } else { ?>
-                    <h2>هیچ بابه‌تی بونی نیه‌ </h2>
                     <?php } ?>  </a>
                 </div>
             </div>
