@@ -4173,7 +4173,7 @@
                     },
                 ]);
 
-            </script>
+</script>
 
 	<?php wp_head(); ?>
     </head>
