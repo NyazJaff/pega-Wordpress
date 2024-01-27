@@ -11,7 +11,6 @@
    wp_enqueue_style('5', get_template_directory_uri() . '/inc/css/photoswipe.css');
    wp_enqueue_style('6', get_template_directory_uri() . '/inc/css/photoswipe-skin.css');
    wp_enqueue_style('7', get_template_directory_uri() . '/inc/css/player.css');
-   wp_enqueue_style('8', get_template_directory_uri() . '/inc/css/site-numbers.css');
    wp_enqueue_style('99', get_template_directory_uri() . '/inc/fonts/pega-font.css');
    // wp_enqueue_style('app', get_template_directory_uri() . '/inc/css/app.css');
 
